@@ -1,0 +1,20 @@
+<br>
+<div class="container">
+
+<h1>My Lists</h1>
+<br>
+<% @lists.each do |list| %>
+
+
+<h6>
+<%= link_to list.name, list%>
+</h6>
+
+<% end %>
+
+<br>
+<div class="btn btn-warning">
+<%= link_to "create a movie list", new_list_path %>
+</div>
+
+</div>
